@@ -27,6 +27,8 @@ for i in range(epoch):
 
 
 plt.scatter(dataset.studytime,dataset.score,color="blue")
+plt.xlabel("Study Time(hr)")
+plt.ylabel("Score")
 plt.plot(list(range(1,11)),[w *x + b for x in range(1,11)],color="red")
 plt.show()
 
